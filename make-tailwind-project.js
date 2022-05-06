@@ -4,7 +4,7 @@ const fs = require('fs');
 
 const pkg = require('./package.json');
 
-input = '@tailwind base;\n@tailwind components;\n@tailwind utilities;';
+const input = '@tailwind base;\n@tailwind components;\n@tailwind utilities;';
 
 pkg.scripts = {
     build: 'npx tailwindcss -i ./src/input.css -o ./dist/output.css',
