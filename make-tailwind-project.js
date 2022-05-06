@@ -8,7 +8,7 @@ input = '@tailwind base;\n@tailwind components;\n@tailwind utilities;';
 
 pkg.scripts = {
     build: 'npx tailwindcss -i ./src/input.css -o ./dist/output.css',
-    run: 'npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch'
+    watch: 'npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch'
 };
 
 fs.writeFileSync('./package.json', JSON.stringify(pkg, undefined, '  '));
